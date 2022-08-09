@@ -1,0 +1,34 @@
+HTTP/1.1 -
+It usest works on the textual format.
+There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+It uses requests resource Inlining for use getting multiple pages
+It compresses data by itself.
+
+HTTP/2 -
+It works on the binary protocol.
+It allows multiplexing so one TCP connection is required for multiple requests.
+It uses PUSH frame by server that collects all multiple pages 
+It uses HPACK for data compression.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+objects and its internal representation in Javascript -
+
+An object is a collection of properties, and a property is an association between a name (or key) and a value. A property’s value can be a function, in which case the property is known as a method.
+Example of object - 
+var myLaptop = {
+ram : 6
+cpu : "Intel i9"
+Graphics : "Nvdia GTX 1650 "
+Brand : "MSI" 
+};
+
+If I want to access ram from above object I can access as below -
+myLaptop.ram //output will be 6
+
+The JavaScript standard allows developers to define objects in a very flexible way, and it is hard to come up with an efficient representation that works for everything. We can access properties using two different kinds of expressions:
+obj.prop
+obj[“prop”]
+
+
